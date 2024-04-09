@@ -54,3 +54,5 @@ print(my_new_list)
 my_new_list.sort() #Ordena los elementos de la lista
 print(my_new_list)
 
+print(my_new_list[1:3])
+
