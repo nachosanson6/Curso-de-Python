@@ -29,7 +29,13 @@ my_other_list.insert(1,'rojo') # Inserta un dato en la posición que le indiquem
 print(my_other_list)
 my_other_list.remove('rojo') # Elimina el dato que le indiquemos. Si hay varios elementes con el mosmo nombre o dato, elimina solo el primero
 print(my_other_list)
-my_list.pop() #Elimina el último dato de la lista. Si pongo un indice entre los parentesis quita el dato que se encuentre en esa posición
+my_list.pop() #Elimina el último dato de la lista. Si pongo un indice entre los parentesis quita el dato que se encuentre en esa posición. Se utiliza si quieres hacerr algo con el elemento eliminado
 print(my_list)
 print(my_list.pop(1)) #Imprimo el último dato de la lista
+
+del my_list[1] # Elimina el elemento que está en la posición que le indiquemos
+print(my_list)
+
+my_list.clear() #Vacia la lista completa
+print(my_list)
 
