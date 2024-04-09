@@ -15,3 +15,7 @@ print(len(my_variable))
 #Variables en una sola linea
 name,surname, alias, edad = 'Ignacio', 'Sansón', 'Nacho', 33
 print('Soy',name, surname,'tengo', edad, 'años', 'aunque todos me llaman' , alias)
+
+#Nombrar las variables desde la terminal
+first_name = input('¿Cual es tu nombre?')
+print(first_name)
