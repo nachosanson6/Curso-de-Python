@@ -22,5 +22,14 @@ print(name)
 
 print(my_list + my_other_list)
 
-my_list= 'Hola Python'
+#Funciones
+my_other_list.append('mouredev') #Inserta un nuevo dato al final
+print(my_other_list)
+my_other_list.insert(1,'rojo') # Inserta un dato en la posición que le indiquemos
+print(my_other_list)
+my_other_list.remove('rojo') # Elimina el dato que le indiquemos. Si hay varios elementes con el mosmo nombre o dato, elimina solo el primero
+print(my_other_list)
+my_list.pop() #Elimina el último dato de la lista. Si pongo un indice entre los parentesis quita el dato que se encuentre en esa posición
 print(my_list)
+print(my_list.pop(1)) #Imprimo el último dato de la lista
+
