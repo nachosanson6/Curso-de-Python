@@ -21,6 +21,11 @@ print(my_tuple.index('Sanson')) #No dice le indice del elemento seleccionado,si 
 # print (my_tuple)
 
 my_sum_tuple = my_tuple + my_other_tuple
-print(my_sum_tuple)
-print(my_sum_tuple[3:6])
+print(my_sum_tuple) #(33, 1.78, 'Nacho', 'Sanson', 50, 90, 25, 84)
+print(my_sum_tuple[3:6]) #('Sanson', 50, 90)
+
+# Se puede cambiar entre lista y tupla con list() y tuple()
+
+del my_tuple #No vacía la tupla sino que elimina la tupla entera
+print(my_tuple)
 
