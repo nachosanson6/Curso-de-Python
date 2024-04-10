@@ -23,3 +23,10 @@ print(my_dict)
 
 my_dict['Calle'] = 'Santa Genoveva'  #Se pueden añadir nuevas claves
 print(my_dict)
+
+# Funciones
+# Dos maneras de eliminar una clave
+my_dict.pop(1) 
+print (my_dict)
+del my_dict['Calle']
+print(my_dict)
