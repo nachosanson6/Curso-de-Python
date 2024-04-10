@@ -34,9 +34,26 @@ print(my_dict)
 print('Apellido' in my_dict)  # True. Busca por clave no por valor
 print('Sanson' in my_dict)  #False
 
-print(my_dict.items())  #dict_items([('Nombre', 'Nuria'), ('Apellido', 'Sanson'), ('Edad', 33), ('Lenguajes', {'React', 'Javascript', 'Node'})])
-print(my_dict.keys())  #dict_keys(['Nombre', 'Apellido', 'Edad', 'Lenguajes'])
-print(my_dict.values())  #dict_values(['Nuria', 'Sanson', 33, {'React', 'Javascript', 'Node'}])
+print(my_dict.items())  # dict_items([('Nombre', 'Nuria'), ('Apellido', 'Sanson'), ('Edad', 33), ('Lenguajes', {'React', 'Javascript', 'Node'})])
+print(my_dict.keys())  # dict_keys(['Nombre', 'Apellido', 'Edad', 'Lenguajes'])
+print(my_dict.values())  # dict_values(['Nuria', 'Sanson', 33, {'React', 'Javascript', 'Node'}])
 
 my_new_dict = my_dict.fromkeys(('Nombre', 'Apellido')) # Crea un nuevo diccionario con esas clasves pero sin valores
-print(my_new_dict)
+print(my_new_dict) # {'Nombre': None, 'Apellido': None}
+
+my_new_dict = dict.fromkeys(('Nombre', 'Apellido','Piso')) # Crea un nuevo diccionario con esas clasves pero sin valores
+print(my_new_dict)  # {'Nombre': None, 'Apellido': None, 'Piso': None}
+
+my_new_dict = dict.fromkeys(my_dict) # Crea un nuevo diccionario con las claves del anterior dict pero con los valores vacios
+print(my_new_dict)  # {'Nombre': None, 'Apellido': None, 'Edad': None, 'Lenguajes': None}
+
+# Con el segundo valor de fromkey añade ese segundo valor a cada una de las claves
+
+my_new_dict = dict.fromkeys(my_dict, ('Nacho','Sanson')) # 
+print(my_new_dict)  # {'Nombre': ('Nacho', 'Sanson'), 'Apellido': ('Nacho', 'Sanson'), 'Edad': ('Nacho', 'Sanson'), 'Lenguajes': ('Nacho', 'Sanson')}
+
+my_new_dict = dict.fromkeys(my_dict, ['Nacho','Sanson']) # 
+print(my_new_dict)  # {'Nombre': ['Nacho', 'Sanson'], 'Apellido': ['Nacho', 'Sanson'], 'Edad': ['Nacho', 'Sanson'], 'Lenguajes': ['Nacho', 'Sanson']}
+
+my_new_dict = dict.fromkeys(my_dict, ['Nacho','Sanson']) # 
+print(my_new_dict)  #
