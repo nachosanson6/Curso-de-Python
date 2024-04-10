@@ -24,3 +24,21 @@ print('Sansin' in my_other_set)  #False
 my_other_set.remove(33)  # Permite eliminar el elemento que queramos
 print(my_other_set)
 
+my_other_set.clear()  # Vacia el set
+print(my_other_set)
+
+del my_other_set  #Elimina el set por completo
+#print(my_other_set)
+
+# Se puede transiformar entre list, tuple y set aunque el ordean al pasarlo a lista vairará cada vez que se ejecute
+
+my_set = {'Nacho', 'Sanson', 33}
+my_other_set = {'JavaScript', 'React'}
+# my_new_set = my_set + my_other_set
+my_new_set = my_set.union(my_other_set)
+print(my_new_set)
+
+print(my_new_set.union('node'))  #{'n', 'Nacho', 'JavaScript', 'React', 33, 'Sanson', 'o', 'e', 'd'} NO OLVIDAR LOS CORCHETES
+print(my_new_set.union({'node'}))  #{33, 'Nacho', 'Sanson', 'JavaScript', 'node', 'React'}
+
+print(my_new_set.difference(my_set))
