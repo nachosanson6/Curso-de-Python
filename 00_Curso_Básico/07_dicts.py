@@ -30,3 +30,13 @@ my_dict.pop(1)
 print (my_dict)
 del my_dict['Calle']
 print(my_dict)
+
+print('Apellido' in my_dict)  # True. Busca por clave no por valor
+print('Sanson' in my_dict)  #False
+
+print(my_dict.items())  #dict_items([('Nombre', 'Nuria'), ('Apellido', 'Sanson'), ('Edad', 33), ('Lenguajes', {'React', 'Javascript', 'Node'})])
+print(my_dict.keys())  #dict_keys(['Nombre', 'Apellido', 'Edad', 'Lenguajes'])
+print(my_dict.values())  #dict_values(['Nuria', 'Sanson', 33, {'React', 'Javascript', 'Node'}])
+
+my_new_dict = my_dict.fromkeys(('Nombre', 'Apellido')) # Crea un nuevo diccionario con esas clasves pero sin valores
+print(my_new_dict)
