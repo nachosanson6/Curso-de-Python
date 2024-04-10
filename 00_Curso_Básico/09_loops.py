@@ -34,3 +34,9 @@ my_dict = {
 }
 for element in my_dict:
     print(element)  # Nombre, Apellido, Edad, Lenguajes, 1
+    if element == 'Edad':
+        break
+    print('Se ejecuta')
+
+else:
+    print('Finalizado')
