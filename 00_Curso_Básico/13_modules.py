@@ -13,3 +13,14 @@ from module import sum_values, printValue
 
 sum_values(5, 2, 9)
 printValue('hola')
+
+
+#Importamos modulos del sistema
+
+import math
+
+print(math.pi)
+print(math.pow(2,8))
+
+from math import pi as Pi_Value
+print(Pi_Value)
