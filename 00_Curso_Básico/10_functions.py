@@ -4,6 +4,7 @@ def my_function ():
 
 my_function ()
 
+
 def sum_two_values (a,b):
     print(a + b)
 
