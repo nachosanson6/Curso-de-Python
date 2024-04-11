@@ -15,3 +15,14 @@ else: # Opcional
 finally: # Opcional
         # Se ejecuta siempre
         print('La ejecución continúaaaaaa')
+
+
+# Errores por tipo
+try:
+    print(number_one + number_two)
+    
+except ValueError:
+    print('Se ha producido un ValuError')
+
+except TypeError: # Solo se ejecuta si el error es por tipo, si se produce otro tipo de error, se rompe
+    print('Se ha producido un TypeError')
