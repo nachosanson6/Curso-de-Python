@@ -63,3 +63,39 @@ print(re.findall(pattern,my_string))  # ['7']
 
 pattern = r'\D' # Saca todas las letras pero no los numeros
 print(re.findall(pattern,my_string))  # ['E', 's', 't', 'a', ' ', 'e', 's', ' ', 'l', 'a', ' ', 'l', 'e', 'c', 'c', 'i', 'ó', 'n', ' ', 'n', 'ú', 'm', 'e', 'r', 'o', ' ', ':', ' ', 'L', 'e', 'c', 'c', 'i', 'ó', 'n', ' ', 'E', 'x', 'p', 'r', 'e', 's', 'i', 'o', 'n', 'e', 's', ' ', 'R', 'e', 'g', 'u', 'l', 'a', 'r', 'e', 's']
+
+pattern = r'[l].'
+print(re.findall(pattern,my_string))  # ['la', 'le', 'la']
+
+pattern = r'[l].*'  # Desde la primera l hacia adelante
+print(re.findall(pattern,my_string))  # ['la lección número 7: Lección Expresiones Regulares']
+
+email='nachosanson6@gmail.com'
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+print(re.match(pattern,email))
+
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+print(re.search(pattern,email))
+
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+print(re.findall(pattern,email))
+
+
+
+
+email='nachosanson6@gmail'
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+print(re.match(pattern,email))
+
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+print(re.search(pattern,email))
+
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+print(re.findall(pattern,email))
+
+
+
+
+
+
+
