@@ -45,3 +45,14 @@ print(sub)  # Esta es la LECCIÓN número 7: LECCIÓN Expresiones Regulares
 
 ### Patterns
 
+pattern = r'[lL]ección'
+print(re.findall(pattern,my_string))  # ['lección', 'Lección']
+
+pattern = r'[lL]ección|Expresiones'
+print(re.findall(pattern,my_string))  # ['lección', 'Lección', 'Expresiones']
+
+pattern = r'[a-z]'
+print(re.findall(pattern,my_string))  # ['s', 't', 'a', 'e', 's', 'l', 'a', 'l', 'e', 'c', 'c', 'i', 'n', 'n', 'm', 'e', 'r', 'o', 'e', 'c', 'c', 'i', 'n', 'x', 'p', 'r', 'e', 's', 'i', 'o', 'n', 'e', 's', 'e', 'g', 'u', 'l', 'a', 'r', 'e', 's']
+
+pattern = r'[0-9]'
+print(re.findall(pattern,my_string))  # ['7']
