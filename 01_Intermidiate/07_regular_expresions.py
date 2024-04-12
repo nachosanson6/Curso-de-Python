@@ -56,3 +56,10 @@ print(re.findall(pattern,my_string))  # ['s', 't', 'a', 'e', 's', 'l', 'a', 'l',
 
 pattern = r'[0-9]'
 print(re.findall(pattern,my_string))  # ['7']
+print(re.search(pattern,my_string))  # <re.Match object; span=(26, 27), match='7'>
+
+pattern = r'\d' # Saca todos los número pero no las letras
+print(re.findall(pattern,my_string))  # ['7']
+
+pattern = r'\D' # Saca todas las letras pero no los numeros
+print(re.findall(pattern,my_string))  # ['E', 's', 't', 'a', ' ', 'e', 's', ' ', 'l', 'a', ' ', 'l', 'e', 'c', 'c', 'i', 'ó', 'n', ' ', 'n', 'ú', 'm', 'e', 'r', 'o', ' ', ':', ' ', 'L', 'e', 'c', 'c', 'i', 'ó', 'n', ' ', 'E', 'x', 'p', 'r', 'e', 's', 'i', 'o', 'n', 'e', 's', ' ', 'R', 'e', 'g', 'u', 'l', 'a', 'r', 'e', 's']
