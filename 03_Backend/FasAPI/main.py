@@ -1,3 +1,9 @@
+# Iniciar el server: uvicorn main:app --reload
+# Documentación con Swagger: /docs
+# Documentación con Redocly: /redoc
+# Arrancar myenv: source myenv/bin/activate
+
+
 from typing import Union
 from fastapi import FastAPI
 
@@ -11,6 +17,4 @@ async def root():
 async def nombre():
     return{'Nombre':'Nacho', 'Apellido':'Sansón', 'Edad':33 , 'Altura':1.78}
 
-# Iniciar el server: uvicorn main:app --reload
-#Documentación con Swagger: /docs
-#Documentación con Redocly: /redoc
+
