@@ -18,7 +18,21 @@ users_list = [User(id = 1, name = 'Nacho', surname = 'Sanson', age = 33, alias =
 async def users():
     return users_list
 
-@app.get('/user/{id}')
+### Path
+@app.get('/user/{id}')  # http://localhost:8000/user/2
 async def user(id: int):
     users = filter(lambda user: user.id == id, users_list)
-    return list(users)
+    try :
+        return list(users)[0]
+    except:
+        return "{'error':'No se he encontrado el usuario}"
+    
+
+### Query
+@app.get('/userquery/')  # http://localhost:8000/userquery/?id=1
+async def user(id: int):
+    users = filter(lambda user: user.id == id, users_list)
+    try :
+        return list(users)[0]
+    except:
+        return "{'error':'No se he encontrado el usuario}"
